@@ -41,7 +41,7 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
             --with-stream_ssl_preread_module && \
         make install && \
         apk del build-base && \
-        rm -rf /tmp/src && \
+        rm -rf /nginx-1.12.2* && \
         rm -rf /var/cache/apk/*
 
 EXPOSE 80 443 3306
