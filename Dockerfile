@@ -4,7 +4,7 @@ MAINTAINER xuqplus
 
 RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
         adduser -D nginx && \
-        wget https://github.com/xuqplus/alpine-nginx/blob/master/source/nginx-1.12.2.tar.gz && \
+        wget https://raw.githubusercontent.com/xuqplus/alpine-nginx/master/source/nginx-1.12.2.tar.gz && \
         tar xzvf nginx-1.12.2.tar.gz && \
         cd nginx-1.12.2 && \
         ./configure \
