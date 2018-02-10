@@ -44,6 +44,6 @@ RUN apk --update add openssl-dev pcre-dev zlib-dev wget build-base && \
         rm -rf /nginx-1.12.2* && \
         rm -rf /var/cache/apk/*
 
-EXPOSE 80 443 3306
+EXPOSE 80 443
 
-CMD nginx
+CMD ["nginx", "-g", "daemon off;"]
